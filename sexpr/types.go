@@ -78,7 +78,7 @@ func (l List) String() string {
 type Func struct {
 	Params []Symbol
 	Body   SExpr
-	Env    *Env // Will define in interpreter package
+	Env    interface{} // Use interface{} to avoid circular import
 }
 
 func (f Func) String() string {
@@ -88,15 +88,9 @@ func (f Func) String() string {
 // Primitive represents a built-in function
 type Primitive struct {
 	Name string
-	Fn   func([]SExpr, *Env) (SExpr, error)
+	Fn   func([]SExpr, interface{}) (SExpr, error)
 }
 
 func (p Primitive) String() string {
 	return fmt.Sprintf("<primitive:%s>", p.Name)
-}
-
-// Env is forward-declared here but implemented in interpreter
-type Env interface {
-	Define(name string, value SExpr)
-	Lookup(name string) (SExpr, error)
 }

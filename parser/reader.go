@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 // Reader parses tokens into S-expressions

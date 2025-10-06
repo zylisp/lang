@@ -3,7 +3,7 @@ package interpreter
 import (
 	"testing"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 func TestEnvDefineAndLookup(t *testing.T) {

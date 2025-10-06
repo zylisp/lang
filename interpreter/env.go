@@ -3,7 +3,7 @@ package interpreter
 import (
 	"fmt"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 // Env represents a lexical environment for variable bindings

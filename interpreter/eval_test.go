@@ -3,8 +3,8 @@ package interpreter
 import (
 	"testing"
 
-	"zylisp/lang/parser"
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/parser"
+	"github.com/zylisp/lang/sexpr"
 )
 
 func testEval(t *testing.T, input string, expected sexpr.SExpr) {

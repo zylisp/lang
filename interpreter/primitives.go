@@ -3,7 +3,7 @@ package interpreter
 import (
 	"fmt"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 // LoadPrimitives adds all primitive functions to an environment

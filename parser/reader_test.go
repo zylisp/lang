@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 func TestReaderNumbers(t *testing.T) {

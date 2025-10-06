@@ -3,7 +3,7 @@ package interpreter
 import (
 	"fmt"
 
-	"zylisp/lang/sexpr"
+	"github.com/zylisp/lang/sexpr"
 )
 
 // Eval evaluates an S-expression in an environment
